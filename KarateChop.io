@@ -6,7 +6,7 @@ KarateChop := Object clone do(
 		if (haystack at(0) == needle, return 0)
 		
 		lo := haystack at(0)
-		hi := haystack size
+		hi := haystack size - 1
 		check := 0
 		mid := -1
 		while(lo < hi and check != mid,
