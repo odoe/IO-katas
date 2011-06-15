@@ -5,8 +5,6 @@ StringCalculator := Object clone do (
     if (nums size == 0, return 0)
     if (nums size == 1, return 0)
     
-    nums = nums map(asNumber)  
-    
-    return nums sum()
+    return nums map(asNumber) sum()
   )
 )
