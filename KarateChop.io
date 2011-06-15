@@ -15,7 +15,6 @@ KarateChop := Object clone do(
 			midval := haystack at(mid)
 			if (needle < midval) then(hi = mid) elseif (needle > midval) then(lo = mid) else(return mid)
 		)
-		
 		return -1
 	)
 )

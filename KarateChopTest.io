@@ -1,6 +1,3 @@
-// test not passing yet
-// having some silly math issue on my part
-
 KarateChopTest := UnitTest clone do(
 	kc := KarateChop clone
 	// test that it is ready
