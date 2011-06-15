@@ -9,14 +9,13 @@ KarateChop := Object clone do(
 		hi := haystack size
 		check := 0
 		mid := -1
-		found := false
 		while(lo < hi and check != mid,
 			check = mid
 			mid = ((lo+hi)/2) floor
 			midval := haystack at(mid)
-			if (needle < midval) then(hi = mid) elseif (needle > midval) then(lo = mid) else(found = true, return mid)
+			if (needle < midval) then(hi = mid) elseif (needle > midval) then(lo = mid) else(return mid)
 		)
 		
-		if (found, return mid, return -1)
+		return -1
 	)
 )
